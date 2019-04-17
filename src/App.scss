@@ -50,7 +50,7 @@ ul {
   margin: 0;
 }
 
-.grid{
+.grid {
   display: grid;
   grid-template-columns: 100%;
   //grid-auto-rows: minmax(100px, auto);
@@ -180,7 +180,7 @@ header {
     margin: auto;
     text-align: center;
     color: $white;
-    margin-bottom: 400px;
+    margin-bottom: 500px;
 
     h1 {
       font-family: $AlexBrushFont !important;
