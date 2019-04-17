@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
-import SimpleMap from './Googlemap';
-import axios from 'axios';
-const API_KEY = '1e90d005747d5d491d09b969b2b73da1';
-const URL = 'api.openweathermap.org/data/2.5/weather?q=Manchester,uk&appid=';
+import React, { Component } from "react";
+import SimpleMap from "./Googlemap";
+import axios from "axios";
+const API_KEY = "1e90d005747d5d491d09b969b2b73da1";
+//const URL = "api.openweathermap.org/data/2.5/weather?q=Manchester,uk&appid=";
 class Map extends Component {
   state = {
     temp: null,
-    weather: '',
+    weather: "",
     humidity: null
   };
 
@@ -24,8 +24,8 @@ class Map extends Component {
   }
   render() {
     const imageStyle = {
-      width: '90px',
-      height: '70px'
+      width: "90px",
+      height: "70px"
     };
     return (
       <div>
@@ -51,7 +51,7 @@ class Map extends Component {
                   <img
                     className="scale-up-center"
                     style={imageStyle}
-                    src={'/images/icons/temperature-2.svg'}
+                    src={"/images/icons/temperature-2.svg"}
                     alt="pic"
                   />
                 </div>
@@ -63,8 +63,8 @@ class Map extends Component {
                 <div className="ms-text ms-text-gray-font">
                   <p className="center"> {this.state.temp} celcuis</p>
                   <p className="text-center">
-                    {' '}
-                    {this.state.humidity} humidity{' '}
+                    {" "}
+                    {this.state.humidity} humidity{" "}
                   </p>
                   <p className="center"> With {this.state.weather} </p>
                 </div>
@@ -74,7 +74,7 @@ class Map extends Component {
                   <img
                     className="scale-up-center"
                     style={imageStyle}
-                    src={'/images/icons/placeholder.svg'}
+                    src={"/images/icons/placeholder.svg"}
                     alt="pic"
                   />
                 </div>
@@ -84,9 +84,15 @@ class Map extends Component {
                   </h5>
                 </div>
                 <div className="ms-text ms-text-gray-font">
-                  <p className="center"> x minutes to Playa Encuentro</p>
-                  <p className="text-center"> x minutes to the airport </p>
-                  <p className="center"> x minutes to somewhere else </p>
+                  <p className="center"> 3 minutes to Playa Encuentro</p>
+                  <p className="text-center">
+                    {" "}
+                    28 minutes to Puerto Plata airport{" "}
+                  </p>
+                  <p className="center">
+                    {" "}
+                    16 minutes to El Choco National Park{" "}
+                  </p>
                 </div>
               </div>
             </div>

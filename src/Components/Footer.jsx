@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 class Footer extends Component {
   render() {
@@ -10,14 +10,14 @@ class Footer extends Component {
           <div className="copyright">
             <p>
               <a href="https://www.booking.com/hotel/do/surf-blue-villa-cabarete.en-gb.html">
-                {' '}
-                Booking
+                {" "}
+                Booking.com
               </a>
             </p>
             <p>
-              <a href="https://www.booking.com/hotel/do/surf-blue-villa-cabarete.en-gb.html">
-                {' '}
-                Something else
+              <a href="https://www.bedandbreakfast.eu/bed-and-breakfast/cabarete/surf-blue-cabarete/4866977/">
+                {" "}
+                Bed and Breakfast
               </a>
             </p>
           </div>

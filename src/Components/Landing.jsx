@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
-import $ from 'jquery';
+import React, { Component } from "react";
+import $ from "jquery";
 
 const scrollToBooking = e => {
   e.preventDefault();
-  $('html,body').animate(
+  $("html,body").animate(
     {
-      scrollTop: $('#Booking').offset().top
+      scrollTop: $("#Booking").offset().top
     },
     2000
   );
@@ -15,7 +15,7 @@ class Landing extends Component {
   render() {
     const handleShow = e => {
       e.preventDefault();
-      this.refs.Booking.scrollIntoView({ block: 'end', behavior: 'smooth' });
+      this.refs.Booking.scrollIntoView({ block: "end", behavior: "smooth" });
     };
     return (
       <div>
@@ -33,7 +33,7 @@ class Landing extends Component {
             <h1 className="alex-brush">Surf Blue</h1>
             <span id="asterisk">*</span>
             <p>vacation with us</p>
-            <button
+            {/* <button
               className="home-button ms-btn ms-yellow ms-rounded"
               onClick={() =>
                 this.refs.Booking.scrollIntoView({
@@ -51,7 +51,7 @@ class Landing extends Component {
               }}
             >
               Book
-            </button>
+            </button> */}
           </div>
         </header>
       </div>
