@@ -1,12 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Alex+Brush|Overpass+Mono:600,700");
 @import url("https://fonts.googleapis.com/css?family=PT+Sans");
 
-$OverpassMonoFont: "Overpass Mono",
-monospace;
-$PTSansFont: "PT Sans",
-sans-serif;
-$AlexBrushFont: "Alex Brush",
-cursive;
+$OverpassMonoFont: "Overpass Mono", monospace;
+$PTSansFont: "PT Sans", sans-serif;
+$AlexBrushFont: "Alex Brush", cursive;
 $lightbrown: rgb(190, 128, 64);
 $blue: rgb(94, 124, 189);
 $white: rgb(255, 255, 255);
@@ -168,7 +165,10 @@ header {
       }
     }
   }
-
+  .landing-logo {
+    width: 30%;
+    //height: 70%;
+  }
   // .alex-brush {
   //   font-family: $AlexBrushFont !important;
   // }
@@ -176,11 +176,11 @@ header {
     CENTER HEADER TEXT
   */
   .center {
-    line-height: 0;
+    line-height: 5;
     margin: auto;
     text-align: center;
     color: $white;
-    margin-bottom: 500px;
+    margin-bottom: 350px;
 
     h1 {
       font-family: $AlexBrushFont !important;
@@ -382,8 +382,6 @@ nav div.show {
       padding: 10px;
     }
   }
-
-
 }
 
 /*
@@ -521,7 +519,7 @@ footer {
   }
 
   .mat-div::after {
-    background-color: #8E8DBE;
+    background-color: #8e8dbe;
     transform: scaleX(0);
   }
 
@@ -530,7 +528,7 @@ footer {
   }
 
   .is-active .mat-label {
-    color: #8E8DBE;
+    color: #8e8dbe;
   }
 
   .is-completed .mat-label {
@@ -561,9 +559,6 @@ footer {
         }
       }
     }
-
-
-
   }
 
   a {
@@ -635,7 +630,6 @@ footer {
   MEDIA QUERIES
 */
 @media screen and (max-width: 425px) {
-
   header,
   .bread-background,
   .cake-background {
@@ -645,7 +639,6 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
-
   header,
   .bread-background,
   .cake-background {
@@ -655,7 +648,6 @@ footer {
 }
 
 @media (min-width: 768px) {
-
   header,
   .bread-background,
   .cake-background {
@@ -673,7 +665,6 @@ footer {
 }
 
 @media (min-width: 769px) {
-
   /*
     NAV
   */
@@ -893,5 +884,4 @@ footer {
     transform: rotate(360deg);
     opacity: 1;
   }
-
 }

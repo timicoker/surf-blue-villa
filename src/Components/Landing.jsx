@@ -30,7 +30,12 @@ class Landing extends Component {
             <div />
           </nav>
           <div className="center">
-            <h1 className="alex-brush">Surf Blue</h1>
+            {/* <h1 className="alex-brush">Surf Blue</h1> */}
+            <img
+              className="landing-logo"
+              src="/images/logo/white logo svg.png"
+              alt=""
+            />
             <span id="asterisk">*</span>
             <p>vacation with us</p>
             {/* <button
